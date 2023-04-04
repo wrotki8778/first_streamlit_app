@@ -51,7 +51,7 @@ def get_fruit_load_list():
       my_cur.execute("SELECT * from fruit_load_list")
       return my_cur.fetchall()
 
-streamlit.text(my_data_rows)
+streamlit.text(get_fruit_load_list())
 
 streamlit.stop()
 fruit_choice_insert = streamlit.text_input('What fruit would you like to add?','Durian')
